@@ -1,0 +1,19 @@
+{
+  "name": "girish-proxy",
+  "version": "1.0.0",
+  "description": "Proxy for reviews",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Girish Venkataraman",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^0.19.1"
+  }
+}
