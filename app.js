@@ -14,6 +14,8 @@ server.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
+// server.use('/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
+
 server.listen(PORT, () => {
   console.log(`server running at: http://localhost:${PORT}`);
 });
