@@ -5,6 +5,8 @@
   </head>
   <body>
 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -18,18 +20,23 @@
         <h3 style="text-align:center">WELCOME TO NORDSTORM</h3>
         <div class="container" style="max-width:100%">
             <div class="row">
-                <div class="col-lg"> &nbsp;</div>
+                <div class="col-lg">
+                    <div id="app"></div>
+                </div>
                 <div class="col-lg">
                     <div class="col" id="productBuyerId"></div>
                 </div>
             </div>
         </div>
+
         <div id="ProductDescription"></div>
         <div style="margin:20px" id='reviewId'></div>
     </div>
+
+    <script src="http://127.0.0.1:3001/5000/main.db8f5dce4f2642ecb52e.bundle.js"></script>
     <script src="http://127.0.0.1:3003/5000/bundle.js">
     </script>
-    <script src="http://127.0.0.1:3001/5000/bundle.js"></script>
+    <script src="http://127.0.0.1:3002/5000/bundle.js"></script>
     <script src="http://127.0.0.1:3004/5000/bundle.js"></script>
 
   </body>

@@ -17,12 +17,13 @@ server.use(express.static(path.join(__dirname, "public")));
 // server.use('/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
 
 server.use('/:id', express.static('public'));
-server.use('/hundred/:id', proxy({ target: 'http://localhost:3001', changeOrigin: true }));
+server.use('/hundred/:id', proxy({ target: 'http://localhost:3002', changeOrigin: true }));
 server.use('/productInfo', proxy({ target: 'http://localhost:3003', changeOrigin: true }));
-server.use('/productBuyerService/:id', proxy({ target: 'http://localhost:3001', changeOrigin: true }));
+server.use('/productBuyerService/:id', proxy({ target: 'http://localhost:3002', changeOrigin: true }));
 server.use('/productQtyInfo', proxy({ target: 'http://localhost:3003', changeOrigin: true }));
 server.use('/Priya/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
 server.use('/review/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
+
 
 server.listen(PORT, () => {
   console.log(`server running at: http://localhost:${PORT}`);
